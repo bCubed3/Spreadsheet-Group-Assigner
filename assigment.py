@@ -1,12 +1,6 @@
 import random
+from csv_to_dict import get_data
 
-
-selections = {
-    "bob": ["a", "b", "c"],
-    "quincy": ["a", "c", "b"],
-    "alice": ["c", "b", "a"],
-    "roger": ["a", "c", "b"]
-}
 
 assignments_max = {
     "a": 1,
@@ -21,6 +15,8 @@ assignments = {
     "c": [],
     "d": []
 }
+
+selections = get_data("Raw_data/choices.csv")
 
 for person, choices in zip(selections, selections.values()):
     assignments[choices[0]].append(person)
