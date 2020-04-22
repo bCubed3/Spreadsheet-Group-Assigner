@@ -1,0 +1,27 @@
+DESIGN DOC
+
+1. Data input
+    a. Data capture
+        - get data from a CSV with a particular format
+        - possibly integrate with Google Sheets API later
+    b. Data sanitation / validation
+        - deal with caps / trailing space / extra spaces
+        - check against master list
+        - alert user to any that do not match (manual step)
+    c. Data conversion
+        - turn data in dictionary --> "person" : ["choice 1", "choice 2", "choice 3"]
+
+2. Assignment algorithm
+    a. create an array for each possible assignment
+    b. assign everyone to their number 1 choice
+    c. iterate through all choices
+        - for each choice with more than the maximum, select those who should be moved
+        - move them
+    d. repeat for second and third choices
+    e. for all those still not categorized, assign them to random options that are not filled
+
+3. Data output
+    a. Turn data into a spreadsheet
+        - convert array to CSV
+        - figure out how to add multiple tabs to spreadsheet
+        - possible interface with Google Sheets API ?
