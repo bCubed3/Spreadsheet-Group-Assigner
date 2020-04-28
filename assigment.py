@@ -45,8 +45,6 @@ while not all_assigned:
             # add in a random.shuffle(people) if a random selection is wanted
             to_reassign += people[assignments_max[option]:]
             assignments[option] = assignments[option][:assignments_max[option]]
-            print(to_reassign)
-            print(assignments)
             all_assigned = False
     # reassign people to their next choice. If none, assign them to the first empty group
     for person in to_reassign:
