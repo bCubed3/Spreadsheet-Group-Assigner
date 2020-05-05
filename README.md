@@ -5,4 +5,4 @@
 ### Data input
 Use the [google form template](https://drive.google.com/open?id=15_yerA5hBO3Rknj1UEUQMHJOs0n8nOVn) provided to get well formatted data.
 
-In the file [`csv_to_dict`](https://github.com/bCubed3/Spreadsheet-Group-Assigner/blob/master/csv_to_dict.py), 
+In the file [`assignment.py`](https://github.com/bCubed3/Spreadsheet-Group-Assigner/blob/master/assigment.py), 
